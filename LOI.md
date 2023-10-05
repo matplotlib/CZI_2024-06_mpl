@@ -38,9 +38,33 @@ project(s) in this proposal compare to these other tools in terms of user base
 size, usage, and maturity?  How do existing tools and the project(s) in this
 proposal interact?  (maximum of 250 words)
 
+Other options:
+
+* [MR sequence diagrams in Python](https://pypi.org/project/mrsd/)
+* [A package for simulating polysome profiles from Ribo-Seq
+  data](https://pypi.org/project/polyan/)
+* [MSA visualization python package for sequence
+  analysis](https://pypi.org/project/pyMSAviz/)
+* [Use interactive matplotlib to label images for
+  classification](https://pypi.org/project/mpl-image-labeller/)
+* [A tool for plotting CAFE5 gene family expansion/contraction
+  result](https://pypi.org/project/cafeplotter/)
+* [A complete processing pipeline for anatomical neuronal
+  tracing](https://pypi.org/project/braintracer/)
+* [Context specific and dynamic gene regulatory network reconstruction and
+  analysis](https://pypi.org/project/dictys/)
+
+Non-Python:
+
+* ggplot in R
+* Excel
+* Tableau?
+* [Integrative Genomics
+  Viewer](https://software.broadinstitute.org/software/igv/)
+
 # Category
 
-Choose the two categories that best describe the software project(s) audience:
+> Choose the two categories that best describe the software project(s) audience:
 
 * Bioinformatics
 * Single-cell biology
