@@ -1,8 +1,12 @@
 # plotting
+import datetime
 import json
 
-with open('/tmp/gh_dump.json', 'r') as fin:
+with open('gh_dump.json', 'r') as fin:
     d_issues = json.load(fin)
+
+# Avoid backport PRs.
+d_issues = [i for i in d_issues if i['user']['id'] != 39504233]
 
 
 def split_issuse_from_pr(all_issues):
@@ -21,11 +25,11 @@ def split_issuse_from_pr(all_issues):
 issues, prs = split_issuse_from_pr(d_issues)
 
 import matplotlib.pyplot as plt
+import matplotlib.dates as mdates
 import pandas as pd
 
 
 def plot_by(gh_issues, *, ax=None, freq="M", label, show_net=True, show_rolling=False):
-
     opened = pd.Series(
         1,
         index=[
@@ -53,7 +57,7 @@ def plot_by(gh_issues, *, ax=None, freq="M", label, show_net=True, show_rolling=
         closed_by.sum().index,
         closed_by.sum().values,
         where="pre",
-        label=f"{label}s closed/{freq}",
+        label=f"{label} closed/{freq}",
     )
     (open_step,) = ax.step(
         opened_by.sum().index,
@@ -70,7 +74,49 @@ def plot_by(gh_issues, *, ax=None, freq="M", label, show_net=True, show_rolling=
                 lw=2,
             )
 
+    ax.xaxis.set_major_locator(mdates.YearLocator())
     ax.legend()
+
+
+try:
+    with open('gh_releases.json', 'r') as fin:
+        releases = json.load(fin)
+    names = releases['names']
+    dates = releases['dates']
+except FileNotFoundError:
+    # Try to fetch a list of Matplotlib releases and their dates
+    # from https://api.github.com/repos/matplotlib/matplotlib/releases
+    import urllib.request
+
+    url = 'https://api.github.com/repos/matplotlib/matplotlib/releases'
+    url += '?per_page=100'
+    data = json.loads(urllib.request.urlopen(url, timeout=1).read().decode())
+
+    dates = []
+    names = []
+    for item in data:
+        if 'rc' not in item['tag_name'] and 'b' not in item['tag_name']:
+            dates.append(item['published_at'].split("T")[0])
+            names.append(item['tag_name'])
+
+    with open('gh_releases.json', 'w') as fin:
+        json.dump({'names': names, 'dates': dates}, fin)
+
+# Convert date strings (e.g. 2014-10-18) to datetime
+dates = [datetime.datetime.strptime(d, "%Y-%m-%d") for d in dates]
+
+minors = [d for n, d in zip(names, dates) if n.endswith('.0')]
+micros = [d for n, d in zip(names, dates) if not n.endswith('.0')]
+
+fig, ax = plt.subplots(1, 2, layout='constrained', figsize=(25, 12))
+plot_by(issues, ax=ax[0], label='Issues')
+plot_by(prs, ax=ax[1], label='PRs')
+for a in ax:
+    a.xaxis.grid()
+    a.vlines(minors, -100, 100, color='r')
+    a.vlines(micros, -50, 50, color='k', alpha=0.1)
+fig.savefig('fig1.png')
+
 
 import matplotlib
 import matplotlib.pyplot as plt

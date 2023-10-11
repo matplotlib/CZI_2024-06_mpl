@@ -2,6 +2,7 @@
 import aiohttp
 import gidgethub
 import gidgethub.aiohttp
+import os
 import re
 import pymongo
 import asyncio
@@ -25,7 +26,7 @@ def restore_cache(cache, m_cache):
 
 try:
     with open(os.path.expanduser('~/.ghoauth'), 'r') as f:
-        oauth_token = f.read()
+        oauth_token = f.read().strip()
 except FileNotFoundError:
     oauth_token = None
 
@@ -37,7 +38,7 @@ except NameError:
 
 async def get_issues(org, repo, oauth_token):
     async with aiohttp.ClientSession() as session:
-        gh = gidgethub.aiohttp.GitHubAPI(session, 'tacaswell',
+        gh = gidgethub.aiohttp.GitHubAPI(session, 'QuLogic',
                                          oauth_token=oauth_token, cache=cache)
         data = []
         async for d in gh.getiter(f"/repos/{org}/{repo}/issues{{?state}}",
@@ -49,7 +50,7 @@ async def get_issues(org, repo, oauth_token):
 
 async def get_new_contributor_prs(org, repo, oauth_token):
     async with aiohttp.ClientSession() as session:
-        gh = gidgethub.aiohttp.GitHubAPI(session, 'tacaswell',
+        gh = gidgethub.aiohttp.GitHubAPI(session, 'QuLogic',
                                          oauth_token=oauth_token, cache=cache)
         data = []
         async for d in gh.getiter(f"/repos/{org}/{repo}/issues{{?state}}",
@@ -64,11 +65,16 @@ async def get_new_contributor_prs(org, repo, oauth_token):
         dump_cache(cache, m_cache)
         return data
 
-#d_issues = await get_issues('matplotlib', 'matplotlib', oauth_token)
-# for d in new_issues:
-#    print(f"{d['user']['login']: <20} {d['author_association']: <24} {d['pull_request']['url']}")
+async def get_all_issues():
+    d_issues = await get_issues('matplotlib', 'matplotlib', oauth_token)
+    # for d in d_issues:
+    #    print(f"{d['user']['login']: <20} {d['author_association']: <24} {d['pull_request']['url']}")
+    return d_issues
+
+
+d_issues = asyncio.run(get_all_issues())
 
 import json
 
-with open('/tmp/gh_dump.json', 'w') as fout:
+with open('gh_dump.json', 'w') as fout:
     json.dump(d_issues, fout)
