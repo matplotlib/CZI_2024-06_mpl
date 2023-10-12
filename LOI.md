@@ -14,32 +14,36 @@ period.  Enter whole numbers only (no dollar signs, commas, or cents).
 
 Matplotlib is the foundational data visualization library for the Scientific
 Python Ecosystem, with over a million users, including researchers in
-bio-medical imaging, microscopy, and genomics.  For the past 18 years
-Matplotlib has been maintained by a vibrant, primarily volunteer, community.
-However we have grown too big and widely used to continue on solely volunteer
-effort.  For the past 42 months CZI EOSS support for developers has had a
-positive effect on the project by complementing and enabling, not replacing,
-volunteer work.  We propose to continue this effort.
+bio-medical imaging, microscopy, and genomics.  Matplotlib is used by
+researchers across the entire scientific workflow from initial data exploration
+and visualization, to evaluating the output of AI/ML models, to publishing
+finalized figures.
+
+For the past 20 years Matplotlib has been maintained by a vibrant, primarily
+volunteer, community.  However we have grown too big and widely used to
+continue on solely volunteer effort.  For the past 42 months CZI EOSS support
+for developers has had a positive effect on the project by complementing and
+enabling, not replacing, volunteer work.  We propose to continue this effort.
 
 The primary component of the proposed work is the continued maintenance of the
-library.  Maintenance covers a wide range of tasks including triaging and
-fixing bugs, reviewing Pull Requests, tagging and building releases, and
-keeping the continuous integration services running.  These tasks are essential
-for the project's health; though each individually is small, they are
-frequently time critical and tedious.  It is unfair and impractical to rely
-solely on volunteers to accomplish such tasks.
+library and its community.  Maintenance covers a wide range of tasks including
+triaging and fixing bugs, reviewing Pull Requests, tagging and building
+releases, keeping the continuous integration services running, and mentoring
+new contributors.  These tasks are essential for the project's health; though
+each individually is small, they are frequently time critical and sometimes
+tedious.  It is unfair and impractical to rely solely on volunteers to
+accomplish such tasks.
 
-With only volunteer effort we had an inconsistent release schedule.  With
-dedicated funding, feature releases have been possible at a regular 2-per-year
-schedule, and bugfix releases have been made regularly in between them.  This
-regularity allows downstream projects and users to plan effectively for future
-changes in Matplotlib, as deprecations and new features are rolled out
-consistently.
+A major improvement enabled by supported developers has been our transition to
+a regular release schedule.  Currently, feature releases are now made at a
+regular 2-per-year schedule, typically with 3 bugfix releases between them.
+This regularity, roughly doubling our previous average rate, allows downstream
+projects and users to rapidly benefit from ongoing improvements in Matplotlib.
 
-In addition to on-going and routine maintenance, there are substantial, but
-incremental, enhancements to Matplotlib that require long blocks of dedicated
-effort to implement.  Without funding, this type of project can drag out for
-months to years or stall altogether.  Examples include fixing long-standing
+In addition to on-going and routine maintenance, there are substantial but
+incremental enhancements to Matplotlib that require long blocks of dedicated
+effort to implement.  Without supported developers, such projects can drag out
+for months to years or stall altogether.  Examples include fixing long-standing
 rendering and performance issues, overhauling build systems to match the
 changing Python ecosystem, homogenizing and smoothing the API, and new
 user-facing functionality.  Projects to be pursued with the funding requested
@@ -50,14 +54,14 @@ have the time and bandwidth to make strategic decisions about the direction of
 the project to ensure the long term health and viability of Matplotlib.  An
 important part of project management is community management: fostering,
 diversifying, and growing our community.  Supported developers are able to
-perform outreach attending conferences, mentoring sprints, or teaching
+perform outreach: attending conferences, mentoring sprints, or teaching
 tutorials.  We must ensure that our community is open and welcoming to everyone
 who wants to join, with opportunities to contribute in a spectrum of roles as
 their interests and skills develop.
 
 We propose to continue full support (1 FTE) for Elliott Sales de Andrade and
-partial support (.2 FTE) for Thomas Caswell.  The effort will be split with
-approximately .75 FTE for maintenance, .25 FTE for medium sized enhancements,
+partial support (.15 FTE) for Thomas Caswell.  The effort will be split with
+approximately .7 FTE for maintenance, .25 FTE for medium sized enhancements,
 and .2 FTE for community and project management.
 
 
