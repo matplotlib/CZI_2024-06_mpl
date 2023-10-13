@@ -77,7 +77,7 @@ dependency of many other packages in the Scientific Python Ecosystem.  These
 include other general purpose tools, such as scikit-learn, networkx, pandas,
 xarray, and scikit-image that are used by biomedical researchers, and
 biomedical-specific projects such CellProfiler, scanpy, starfish, nipy,
-MNE-python, DeepCutLab.  All of these projects have received CZI funding.
+MNE-python, DeepLabCut.  All of these projects have received CZI funding.
 
 # Open Source Software Projects
 
@@ -110,20 +110,6 @@ implement domain-specific visualizations.  To aid users in discovering these
 extensions we have been assigned a Trove classifier on PyPI [1].
 
 A wide range of domain-specific tools have been built with Matplotlib, such as:
-TODO: de-list-ify these.
-* [MR sequence diagrams in Python](https://pypi.org/project/mrsd/)
-* [A package for simulating polysome profiles from Ribo-Seq
-  data](https://pypi.org/project/polyan/)
-* [MSA visualization python package for sequence
-  analysis](https://pypi.org/project/pyMSAviz/)
-* [Use interactive matplotlib to label images for
-  classification](https://pypi.org/project/mpl-image-labeller/)
-* [A tool for plotting CAFE5 gene family expansion/contraction
-  result](https://pypi.org/project/cafeplotter/)
-* [A complete processing pipeline for anatomical neuronal
-  tracing](https://pypi.org/project/braintracer/)
-* [Context specific and dynamic gene regulatory network reconstruction and
-  analysis](https://pypi.org/project/dictys/)
 
 Given the centrality of visualization to data analysis across all domains, no
 single tool can satisfy all needs.  There are a range of tools not built on
@@ -131,9 +117,8 @@ Matplotlib (see https://pyviz.org/tools.html for a long but not exhaustive
 list) that target use cases that Matplotlib is not well suited for.
 
 Outside of the Python ecosystem, a wide range of domain-specific visualization
-packages exist for R.  Proprietary solutions such as MATLAB or Tableau may also
-be used.
-* [Integrative Genomics Viewer](https://igv.org/doc/desktop/)
+libraries exist for R or full applications in Java.  Proprietary solutions such
+as MATLAB or Tableau may also be used.
 
 [1] https://pypi.org/search/?q=&o=&c=Framework+%3A%3A+Matplotlib
 
@@ -164,3 +149,74 @@ be used.
   * If yes, have you previously received funding under the CZI EOSS program?  If
     yes, please provide your application ID in the format EOSS1-0000000001.
     EOSS-0000000100, EOSS3-0000000149, EOSS4-0000000187
+
+# Examples of Matplotlib: DO NOT INCLUDE
+* [Deep Universal Probabilistic Programming](http://pyro.ai/) - used in
+  examples and tutorials
+* [SciPy: Fundamental Tools for Biomedical Research](https://scipy.org/) - used
+  post-analysis
+* [scikit-learn](https://scikit-learn.org/stable/) - used to visualize model
+  results and effectiveness
+* [Digital Biomarker Discovery Pipeline](https://dbdp.org/) - used to visualize
+  digital biomarkers (sleep tracking, blood sugar monitoring, etc.)
+* [DeepLabCut](http://www.mackenziemathislab.org/deeplabcut) - visualization of
+  pose estimation
+* [FastSurfer - a fast and accurate deep-learning based neuroimaging
+  pipeline](https://deep-mi.org/research/fastsurfer/) - visualization of
+  predictions and confusion matrix
+* [bcbio-nextgen - Validated, scalable, community developed variant calling,
+  RNA-seq and small RNA analysis](https://bcbio-nextgen.readthedocs.io/) - used
+  for validation plots
+* [Scanpy - Single-Cell Analysis in Python](https://scanpy.readthedocs.io/) -
+  used for visualizing results of clustering, marker genes, etc.
+* [phasorpy - analysis of fluorescence lifetime and hyperspectral images using
+  the phasor approach](https://www.phasorpy.org/) - based on mpl
+* [nilearn - Machine learning for NeuroImaging in
+  Python](https://nilearn.github.io/stable/index.html) - plots glass brain,
+  clustering results, object recognition, etc.
+* [QIIME 2 - next-generation microbiome bioinformatics platform that is
+  extensible, free, open source, and community developed](https://qiime2.org/)
+  - used in various plugins for their needs
+* [NumPy](https://numpy.org) - used for doc examples
+* [Pandas - high-performance, easy-to-use data
+  structures](https://pandas.pydata.org/) - used for various plots
+* [scikit-image - Image processing in Python](https://scikit-image.org/) - used
+  for doc examples
+* [Xarray - N-D labeled arrays and datasets in Python](https://xarray.dev/) -
+  used for plotting of datasets
+* [PyMC3 - Bayesian Modeling in Python](https://docs.pymc.io/) - used for
+  various statistical and in-algorithm plots
+* [ArviZ - Exploratory analysis of Bayesian
+  models](https://python.arviz.org/en/stable/) - used as default plotting
+  backend
+* [MDAnalysis - An object-oriented toolkit to analyze molecular dynamics
+  trajectories](https://www.mdanalysis.org/) - used for examples and
+  visualization
+* [NetworkX - Network Analysis in Python](https://networkx.org/) - used to show
+  network graphs
+* [Nibabel - Access a multitude of neuroimaging data
+  formats](https://nipy.org/nibabel/) - used for orthographic slice viewer
+* [Orange Data Mining](https://orangedatamining.com/) - used for clusters and
+  regressions
+* [COMBINE lab - COMputational BIology and Network Evolution
+  lab](http://combine-lab.github.io/) - used in various analyses
+* [pyOpenMS - mass spectrometry, specifically for the analysis of proteomics
+  and metabolomics data](https://pyopenms.readthedocs.io/) - used for
+  domain-specific plots
+* [MNE-Python - exploring, visualizing, and analyzing human neurophysiological
+  data](https://mne.tools/stable/index.html) - used for siganls, topographies,
+  images, and other domain-specific plots
+* [MR sequence diagrams in Python](https://pypi.org/project/mrsd/)
+* [A package for simulating polysome profiles from Ribo-Seq
+  data](https://pypi.org/project/polyan/)
+* [MSA visualization python package for sequence
+  analysis](https://pypi.org/project/pyMSAviz/)
+* [Use interactive matplotlib to label images for
+  classification](https://pypi.org/project/mpl-image-labeller/)
+* [A tool for plotting CAFE5 gene family expansion/contraction
+  result](https://pypi.org/project/cafeplotter/)
+* [A complete processing pipeline for anatomical neuronal
+  tracing](https://pypi.org/project/braintracer/)
+* [Context specific and dynamic gene regulatory network reconstruction and
+  analysis](https://pypi.org/project/dictys/)
+* [Integrative Genomics Viewer](https://igv.org/doc/desktop/)
