@@ -111,22 +111,26 @@ in Python (over 1M monthly users) and is a mature library (20+ years old) with
 over 1,500 individual code contributors.  In addition to being directly used by
 scientists, it is a core dependency of libraries and applications that
 implement domain-specific visualizations.  To aid users in discovering these
-extensions we have been assigned a Trove classifier on PyPI [1].
+extensions we maintain a lightly curated list of third-party extensions [1] and
+have been assigned a Trove classifier on PyPI [2] that allows downstream
+developers to self-identify as Matplotlib extensions.
 
 Given the centrality of visualization to data analysis across all domains, no
 single tool can satisfy all needs.  There are a range of tools not built on
-Matplotlib (see https://pyviz.org/tools.html for a long but not exhaustive
-list) that target use cases that Matplotlib is not well suited for.  Outside of
-the Python ecosystem, a wide range of biomedical visualization libraries and
-applications exist in R or Java.  Proprietary solutions such as MATLAB or
-Tableau may also be used in various scientific fields.
+Matplotlib (see [3] for a long but not exhaustive list) that target use cases
+that Matplotlib is not well suited for.  Outside of the Python ecosystem, a
+wide range of biomedical visualization libraries and applications exist in R or
+Java.  Proprietary solutions such as MATLAB or Tableau may also be used in
+various scientific fields.
 
 Matplotib's ubiquity and maturity provide users with a stable and easily
 understood tool on which to build both bespoke and reproducible visualizations.
 Its availability in the Python ecosystem allows for direct integration with
-various data processing and modelling tools in a familiar environment.
+data processing and modelling tools in a familiar environment.
 
-[1] https://pypi.org/search/?q=&o=&c=Framework+%3A%3A+Matplotlib
+[1] https://matplotlib.org/mpl-third-party/
+[2] https://pypi.org/search/?q=&o=&c=Framework+%3A%3A+Matplotlib
+[3] https://pyviz.org/tools.html
 
 # Category
 
