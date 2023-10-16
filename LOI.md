@@ -71,13 +71,17 @@ and .2 FTE for community and project management.
 community (maximum of 250 words).
 
 Scientific Python libraries in biomedical and other fields rely on Matplotlib
-for visualization.  The proposed work will help ensure the health and
-continuing growth of this foundational component.  Matplotlib is a direct
-dependency of many other packages in the Scientific Python Ecosystem.  These
-include other general purpose tools, such as scikit-learn, networkx, pandas,
-xarray, and scikit-image that are used by biomedical researchers, and
-biomedical-specific projects such CellProfiler, scanpy, starfish, nipy,
-MNE-python, DeepLabCut.  All of these projects have received CZI funding.
+for visualization using Matplotlib as either a direct dependency or in their
+documentation and standard user process.  These include other general purpose
+tools, such as scikit-learn, networkx, pandas, xarray, and scikit-image that
+are used by biomedical researchers, and biomedical-specific projects such
+CellProfiler, scanpy, starfish, nipy, MNE-python, DeepLabCut.  In total CZI has
+funded at least 32 proposals that depended on Matplotlib, including all of the
+projects listed here.
+
+The proposed work will help ensure the health and continuing growth of
+Matplotlib as a foundational component.
+
 
 # Open Source Software Projects
 
