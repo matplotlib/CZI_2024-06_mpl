@@ -71,13 +71,17 @@ and .2 FTE for community and project management.
 community (maximum of 250 words).
 
 Scientific Python libraries in biomedical and other fields rely on Matplotlib
-for visualization.  The proposed work will help ensure the health and
-continuing growth of this foundational component.  Matplotlib is a direct
-dependency of many other packages in the Scientific Python Ecosystem.  These
-include other general purpose tools, such as scikit-learn, networkx, pandas,
-xarray, and scikit-image that are used by biomedical researchers, and
-biomedical-specific projects such CellProfiler, scanpy, starfish, nipy,
-MNE-python, DeepLabCut.  All of these projects have received CZI funding.
+for visualization as either a direct dependency or in their
+documentation and standard user process.  These include other general purpose
+tools, such as scikit-learn, networkx, pandas, xarray, and scikit-image that
+are used by biomedical researchers, and biomedical-specific projects such
+CellProfiler, scanpy, starfish, nipy, MNE-python, DeepLabCut.  In total CZI has
+funded at least 32 proposals that depended on Matplotlib, including all of the
+projects listed here.
+
+The proposed work will help ensure the health and continuing growth of
+Matplotlib as a foundational component.
+
 
 # Open Source Software Projects
 
@@ -107,22 +111,26 @@ in Python (over 1M monthly users) and is a mature library (20+ years old) with
 over 1,500 individual code contributors.  In addition to being directly used by
 scientists, it is a core dependency of libraries and applications that
 implement domain-specific visualizations.  To aid users in discovering these
-extensions we have been assigned a Trove classifier on PyPI [1].
+extensions we maintain a lightly curated list of third-party extensions [1] and
+have been assigned a Trove classifier on PyPI [2] that allows downstream
+developers to self-identify as Matplotlib extensions.
 
 Given the centrality of visualization to data analysis across all domains, no
 single tool can satisfy all needs.  There are a range of tools not built on
-Matplotlib (see https://pyviz.org/tools.html for a long but not exhaustive
-list) that target use cases that Matplotlib is not well suited for.  Outside of
-the Python ecosystem, a wide range of biomedical visualization libraries and
-applications exist in R or Java.  Proprietary solutions such as MATLAB or
-Tableau may also be used in various scientific fields.
+Matplotlib (see [3] for a long but not exhaustive list) that target use cases
+that Matplotlib is not well suited for.  Outside of the Python ecosystem, a
+wide range of biomedical visualization libraries and applications exist in R or
+Java.  Proprietary solutions such as MATLAB or Tableau may also be used in
+various scientific fields.
 
 Matplotib's ubiquity and maturity provide users with a stable and easily
 understood tool on which to build both bespoke and reproducible visualizations.
 Its availability in the Python ecosystem allows for direct integration with
-various data processing and modelling tools in a familiar environment.
+data processing and modelling tools in a familiar environment.
 
-[1] https://pypi.org/search/?q=&o=&c=Framework+%3A%3A+Matplotlib
+[1] https://matplotlib.org/mpl-third-party/
+[2] https://pypi.org/search/?q=&o=&c=Framework+%3A%3A+Matplotlib
+[3] https://pyviz.org/tools.html
 
 # Category
 
