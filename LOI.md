@@ -71,7 +71,7 @@ and .2 FTE for community and project management.
 community (maximum of 250 words).
 
 Scientific Python libraries in biomedical and other fields rely on Matplotlib
-for visualization using Matplotlib as either a direct dependency or in their
+for visualization as either a direct dependency or in their
 documentation and standard user process.  These include other general purpose
 tools, such as scikit-learn, networkx, pandas, xarray, and scikit-image that
 are used by biomedical researchers, and biomedical-specific projects such
