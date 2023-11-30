@@ -3,6 +3,27 @@
 > If the grant is still active, provide a short summary of progress towards the
 > deliverables (maximum of 250 words).
 
+- releases targets hit
+- hit responsiveness targets
+- hitting issue and PR targets
+- projects
+  - meson
+  - website overhaul
+  - pybind11 move
+  - high-dpi refactor (on-going)
+  - multi-path collection drawing (on-going)
+  - add  GTK4 backend
+  - high-dpi for GTK4
+  - finish font fallback from GSOC
+  - setting ps language level
+  - wrote mission statement
+  - widget support of pymne
+
+- timely issue resolution
+  - macosx + py312 segfault
+  - interaction with gc.collect
+  - subtle color pallet bug it PDF backend
+
 
 # Proposal Purpose
 
@@ -10,6 +31,12 @@
 > characters including spaces).  Example: To develop a comprehensive, validated
 > atlas of the human kidney at single-cell resolution open to the entire
 > scientific and clinical community.
+
+
+
+To support the continued maintenance, growth, development, and community
+engagement of Matplotlib, the foundational plotting library of the Scientific
+Python Ecosystem.
 
 
 # Proposal Summary
@@ -94,6 +121,76 @@ management.
 > sprints, training), specify how these activities will be organized, the
 > target audience, and expected outcomes (maximum of 750 words)
 
+- finish mplgui
+- more flexible axis ticking and labeling
+- upgrade freetype / move to raqm
+
+- performance improvements
+
+- legends
+- getting rid of mpl-toolkits
+
+The proposed work can be broadly classified into three parts:
+
+- on-going and routine maintenance of Matplotlib;
+- implementation of several mid-sized features;
+- community and project management.
+
+These tasks underpin the long term health of the library but are ill-suited to
+be accomplished solely with volunteer effort.
+
+The primary component of the proposed work is the continued maintenance of
+Matplotlib.  Maintenance covers a wide range of tasks including triaging and
+fixing bugs, reviewing Pull Requests, tagging and building releases, and
+keeping the continuous integration services running.  These tasks are essential
+for the project's health; though each individually is small, they are
+frequently time critical and tedious.  It is unfair and impractical to rely
+solely on volunteers to accomplish such tasks.
+
+For the past 42 months CZI EOSS support for developers has had a positive
+effect on the project by complementing and enabling, not replacing, volunteer
+work.  We propose to continue this effort.  The dedicated support has allowed
+us to promptly fix critical bugs -- including a Python version specific
+segfault in a new CPython release -- and extremely subtle bugs, such as a bug
+in generating incorrect color palette in PDF output.
+
+In addition to routine maintenance there are a substantial improvements to the
+library that can require concentrated effort.  We propose to focus on three
+large projects: generalizing and improving the performance of the Axis ticking
+system, modernizing the font handling code to support variable fonts and
+complex text rendering (required for Arabic, Bengali, and Hebrew), and to
+overhaul how we manage GUI windows.  In addition we will identify five
+medium-sized projects.
+
+The tick location and formatting machinery in Matplotlib is flexible, however
+this flexibility comes at a performance cost, architecturally prevents
+hierarchical labeling, and reduces API usability by making seemingly
+simple tasks extremely complex.
+While the work to design the new API is significant, our primary concern will
+be to complete this work while minimizing the impact on existing users.
+Because tick labeling is so fundamental to plotting even small changes to the
+API will have significant impact on our users.  Although we have had discussion
+about these issues from at least 2015, it has been intractable with volunteer
+effort.
+
+Matplotlib currently does not support complex shaping, including bidirectional
+text, context sensitive shaping, and ordering, required to correctly render
+some non-latin scripts including Arabic, Devanagari, and Hebrew.  Further,
+Matplotlib does not support modern font formats, color fonts, or opentype font
+variations.  There is an existing external implementation of this support that
+can be adapted for the main library.  This is a low risk project that will
+allow users to plot in their native languages and leverage modern fonts.
+
+mplgui pitch
+
+We propose to continue full support (1 FTE) for Elliott Sales de Andrade and
+partial support (.08 FTE) for Thomas Caswell along with travel and equipment
+support for 2 years.  The effort will be split with approximately .73 FTE for
+maintenance, .25 FTE for medium sized enhancements, and .1 FTE for community
+and project management.  We also propose to fund Code of Conduct incident
+response training.
+
+
 
 # Milestones and Deliverables
 
@@ -109,6 +206,17 @@ management.
 > in USD, and source of funding. Include any previous funding for these
 > software projects received from CZI, Wellcome, and/or Kavli outside of the
 > EOSS program (maximum of 250 words).
+
+
+
+- EOSS3-0000000149, (Jan 2021 - Jan 2022) 1yr, 250k$, CZI
+- EOSS4-0000000, (Jan 2022 - Jan 2022) 2yr, 250k$, CZI
+
+- NASA
+
+- Google summer of code (2021, 2023) 1 full time student per summer, in-kind, Google
+- Google season of docs (2023) 1 technical writer part time, in-kind, Google
+
 
 
 # Landscape Analysis
