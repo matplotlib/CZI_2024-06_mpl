@@ -22,7 +22,25 @@
 - timely issue resolution
   - macosx + py312 segfault
   - interaction with gc.collect
-  - subtle color pallet bug it PDF backend
+  - subtle color palette bug in PDF backend
+
+Over the period of the currently active grant, we believe we have successfully
+achieved our targets:
+
+- Feature releases are now made at a regular 2-per-year schedule, typically
+  with 3 bugfix releases between them.
+- Initial response to all issues / new PRs within a week
+- Resolve majority of new issues / PRs within 1 month
+- Resolve 75 issues / quarter
+- Merge or close 75 PRs / quarter
+
+We have implemented several larger projects, including changing build systems
+to Meson, overhauling our website, and moving extensions to pybind11.  We
+identified several medium size projects, such as adding a new GTK4 backend
+(with high DPI support), completing font fallback work started by our Google
+Summer of Code student, and writing our mission statement.  At this time, two
+medium-size projects -- a high DPI refactor, and knockout group-based
+collection drawing -- have been started and are in progress.
 
 
 # Proposal Purpose
