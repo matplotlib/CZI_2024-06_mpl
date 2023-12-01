@@ -233,12 +233,8 @@ response training.
 
 
 
-- EOSS3-0000000149, (Jan 2021 - Jan 2022) 1yr, 250k$, CZI
-- EOSS4-0000000, (Jan 2022 - Jan 2022) 2yr, 250k$, CZI
-
-- NASA
-
-- Google summer of code (2021, 2023) 1 full time student per summer, in-kind, Google
+- NASA  (12/16/21 - 12/15/24) 3y, $632,969
+- Google summer of code (2022, 2023) 1 full time student per summer, in-kind, Google
 - Google season of docs (2023) 1 technical writer part time, in-kind, Google
 
 
