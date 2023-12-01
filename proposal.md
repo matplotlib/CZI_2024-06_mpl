@@ -187,8 +187,8 @@ complex.  While the work to design the new API is significant, our primary
 concern will be to complete this work while minimizing the impact on existing
 users.  Because tick labeling is so fundamental to plotting even small changes
 to the API will have significant impact on our users.  Although we have had
-discussion about these issues since at least 2015, it has been intractable with
-volunteer effort.
+discussion about these issues since at least 2015 [1,2], it has been
+intractable with volunteer effort.
 
 Matplotlib currently does not support complex shaping, including bidirectional
 text, context sensitive shaping, and ordering, required to correctly render
@@ -213,7 +213,8 @@ maintenance, .25 FTE for medium sized enhancements, and .1 FTE for community
 and project management.  We also propose to fund Code of Conduct incident
 response training.
 
-
+[1] https://github.com/matplotlib/matplotlib/issues/5665
+[2] https://github.com/matplotlib/matplotlib/issues/6321
 
 # Milestones and Deliverables
 
