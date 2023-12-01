@@ -42,6 +42,11 @@ Summer of Code student, and writing our mission statement.  At this time, two
 medium-size projects -- a high DPI refactor, and knockout group-based
 collection drawing -- have been started and are in progress.
 
+As community outreach we ran sprints at Grace Hopper Day Celebration (2022,
+2023), SciPy (2022, 2023), pydataNYC (2023), pydata global (2023).  These sprints
+exposed new contributors, including those from under represented groups, to
+contributing to Matplotlib specifically and open source in general.
+
 
 # Proposal Purpose
 
