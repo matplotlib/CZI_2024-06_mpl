@@ -154,34 +154,39 @@ us to promptly fix critical bugs -- including a Python version specific
 segfault in a new CPython release -- and extremely subtle bugs, such as a bug
 in generating incorrect color palette in PDF output.
 
-In addition to routine maintenance there are a substantial improvements to the
+In addition to routine maintenance there are substantial improvements to the
 library that can require concentrated effort.  We propose to focus on three
 large projects: generalizing and improving the performance of the Axis ticking
 system, modernizing the font handling code to support variable fonts and
-complex text rendering (required for Arabic, Bengali, and Hebrew), and to
-overhaul how we manage GUI windows.  In addition we will identify five
-medium-sized projects.
+complex text rendering (required for languages such as Arabic, Bengali, and
+Hebrew), and to overhaul how we manage GUI windows.  In addition we will
+identify five medium-sized projects.
 
-The tick location and formatting machinery in Matplotlib is flexible, however
-this flexibility comes at a performance cost, architecturally prevents
-hierarchical labeling, and reduces API usability by making seemingly
-simple tasks extremely complex.
-While the work to design the new API is significant, our primary concern will
-be to complete this work while minimizing the impact on existing users.
-Because tick labeling is so fundamental to plotting even small changes to the
-API will have significant impact on our users.  Although we have had discussion
-about these issues from at least 2015, it has been intractable with volunteer
-effort.
+The tick location and formatting machinery in Matplotlib is flexible, but this
+flexibility comes at a performance cost, architecturally prevents hierarchical
+labeling, and reduces API usability by making seemingly simple tasks extremely
+complex.  While the work to design the new API is significant, our primary
+concern will be to complete this work while minimizing the impact on existing
+users.  Because tick labeling is so fundamental to plotting even small changes
+to the API will have significant impact on our users.  Although we have had
+discussion about these issues since at least 2015, it has been intractable with
+volunteer effort.
 
 Matplotlib currently does not support complex shaping, including bidirectional
 text, context sensitive shaping, and ordering, required to correctly render
-some non-latin scripts including Arabic, Devanagari, and Hebrew.  Further,
-Matplotlib does not support modern font formats, color fonts, or opentype font
+some non-Latin scripts including Arabic, Devanagari, and Hebrew.  Further,
+Matplotlib does not support modern font formats, color fonts, or OpenType font
 variations.  There is an existing external implementation of this support that
 can be adapted for the main library.  This is a low risk project that will
 allow users to plot in their native languages and leverage modern fonts.
 
-mplgui pitch
+The Matplotlib pyplot module provides bindings to several UI toolkits, along
+with stateful management of the figure life-cycle.  These toolkit windows and
+figures are intertwined in ways that can be unintuitive to users, and contrary
+to expectations set by newer notebook-based development styles.  We have
+produced a prototype that overhauls this UI management and allows more
+independent control of the figure life-cycle compared to its UI appearance, and
+we propose to integrate this prototype into the main library.
 
 We propose to continue full support (1 FTE) for Elliott Sales de Andrade and
 partial support (.08 FTE) for Thomas Caswell along with travel and equipment
