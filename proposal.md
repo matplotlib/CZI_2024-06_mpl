@@ -237,6 +237,38 @@ response training.
 > project(s) are expected to reach upon completion of the grant. Please use a
 > third-person voice (maximum of 500 words).
 
+
+Quantitatively evaluating maintenance work can be tricky---some Issues or PRs
+take minutes to review while others can take days to weeks of effort---but we
+believe that there is value in looking at the throughput of issues and PRs
+supported by the grant.  The total number of open issues and PRs is dependent
+on both how many come in and the amount of work done by volunteers.  We will
+aim to hit the following metrics:
+
+- Initial response to all issues / new PRs within a week
+- Resolve majority of new issues / PRs within 1 month
+- Resolve 75 issues / quarter
+- Merge or close 75 PRs / quarter
+
+We have proposed three large scale projects above:
+
+ - overhauling the axis ticking and labeling system
+ - modernizing font and language support
+ - simplifying integration with GUI toolkits
+
+that will be merged to the main branch by the end of the grant period.  In
+addition we will aim to complete 5 mid-sized projects of smaller scope.  The
+exact projects will be determined in collaboration with the community and
+downstream bio libraries.
+
+We will target a feature releases (3.N.0) every 6 months with 2-3 patch
+releases (3.N.X) between feature releases.
+
+As mentioned above, Matplotlib is involved in on-going and proposed work on
+improving diversity in our community.  We will run at least two conference
+sprints per year to introduce a broad population to contributing to Matplotlib.
+
+
 # Existing Support
 
 > List active and recently completed (previous two calendar years) financial or
