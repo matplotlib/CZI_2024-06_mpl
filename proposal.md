@@ -335,3 +335,22 @@ familiar environment.
 > equity, and inclusion with respect to their contributors and audience. Please
 > see examples from applications funded in previous cycles (maximum of 250
 > words)
+
+
+Matplotlib is committed to being an open and welcoming project.  We believe
+that transparency and explicitness of process and in communication are key to
+building an inclusive, equitable, and diverse project.  In our effort to be
+welcoming, we have worked at being more explicit about our norms
+and values and how the project operates.
+
+We have continued two initiatives to lower the barrier of entry for individuals
+to get involved in developing Matplotlib: a triage role in the project and an
+"incubator" channel on our gitter.  In addition we now have open monthly new
+contributor meetings to assist with the on boarding process.
+
+It is critical that all contributors, independent of experience level both in
+general and with the project, feel safe to make mistakes and learn in our
+community.  We strive to embody these values in our interactions on GitHub, our
+mailing list and community discussion forum (discourse), and in our social
+media.  We hope that these practices will empower and encourage people from
+varied backgrounds and experiences to participate in Matplotlib.
