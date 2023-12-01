@@ -3,27 +3,6 @@
 > If the grant is still active, provide a short summary of progress towards the
 > deliverables (maximum of 250 words).
 
-- releases targets hit
-- hit responsiveness targets
-- hitting issue and PR targets
-- projects
-  - meson
-  - website overhaul
-  - pybind11 move
-  - high-dpi refactor (on-going)
-  - multi-path collection drawing (on-going)
-  - add  GTK4 backend
-  - high-dpi for GTK4
-  - finish font fallback from GSOC
-  - setting ps language level
-  - wrote mission statement
-  - widget support of pymne
-
-- timely issue resolution
-  - macosx + py312 segfault
-  - interaction with gc.collect
-  - subtle color palette bug in PDF backend
-
 Over the period of the currently active grant, we believe we have successfully
 achieved our targets:
 
@@ -152,15 +131,6 @@ management.
 > software project roadmap. For community outreach related activities (e.g.,
 > sprints, training), specify how these activities will be organized, the
 > target audience, and expected outcomes (maximum of 750 words)
-
-- finish mplgui
-- more flexible axis ticking and labeling
-- upgrade freetype / move to raqm
-
-- performance improvements
-
-- legends
-- getting rid of mpl-toolkits
 
 The proposed work can be broadly classified into three parts:
 
