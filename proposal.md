@@ -190,6 +190,16 @@ produced a prototype that overhauls this UI management and allows more
 independent control of the figure life-cycle compared to its UI appearance, and
 we propose to integrate this prototype into the main library.
 
+We have identified two barriers to new contributors to Matplotlib: difficulty
+in finding an good issue and delays in the review process.  To address the
+first, we will continue to identify and roadmap how to implement "good first
+issues".  By labeling the issues in the GitHub UI they are discoverable and the
+roadmap provides context and guidance to someone new to the library.  Secondly,
+we will prioritize reviewing PRs from new contributors to help them be merged
+in a timely manner.  By being responsive to new contributor's PRs we will
+improve their contributing experience and in turn increase the rate at which
+they open subsequent PRs to become a regular contributor.
+
 We propose to continue full support (1 FTE) for Elliott Sales de Andrade and
 partial support (.08 FTE) for Thomas Caswell along with travel and equipment
 support for 2 years.  The effort will be split with approximately .73 FTE for
