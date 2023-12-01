@@ -27,25 +27,34 @@
 Over the period of the currently active grant, we believe we have successfully
 achieved our targets:
 
-- Feature releases are now made at a regular 2-per-year schedule, typically
-  with 3 bugfix releases between them.
+- Feature releases made at a regular 2-per-year schedule, typically
+  with 3 bugfix releases between them
 - Initial response to all issues / new PRs within a week
 - Resolve majority of new issues / PRs within 1 month
 - Resolve 75 issues / quarter
 - Merge or close 75 PRs / quarter
 
 We have implemented several larger projects, including changing build systems
-to Meson, overhauling our website, and moving extensions to pybind11.  We
-identified several medium size projects, such as adding a new GTK4 backend
+to Meson, overhauling our website, and moving compiled extensions to pybind11.
+We identified several medium size projects, such as adding a new GTK4 backend
 (with high DPI support), completing font fallback work started by our Google
 Summer of Code student, and writing our mission statement.  At this time, two
 medium-size projects -- a high DPI refactor, and knockout group-based
 collection drawing -- have been started and are in progress.
 
-As community outreach we ran sprints at Grace Hopper Day Celebration (2022,
-2023), SciPy (2022, 2023), pydataNYC (2023), pydata global (2023).  These sprints
-exposed new contributors, including those from under represented groups, to
-contributing to Matplotlib specifically and open source in general.
+Python 3.12 exposed a fatal, but hidden, bug on macOS.  In part due to this
+active grant, we were able to timely address this issue with bugfix releases in
+both the current and previous feature releases within two weeks.
+
+As community outreach, we ran sprints at Grace Hopper Day Celebration (2022,
+2023), SciPy (2022, 2023), PyData NYC (2023), and PyData Global (2023).  These
+sprints exposed new contributors, including those from under represented
+groups, to contributing to Matplotlib specifically and open source in general.
+
+We worked with Melissa Mendonça (as the Contributor Experience Lead), supported
+by CZI [1].
+
+[1] https://chanzuckerberg.com/eoss/proposals/advancing-an-inclusive-culture-in-the-scientific-python-ecosystem/
 
 
 # Proposal Purpose
