@@ -43,8 +43,6 @@ by CZI [1].
 > atlas of the human kidney at single-cell resolution open to the entire
 > scientific and clinical community.
 
-
-
 To support the continued maintenance, growth, development, and community
 engagement of Matplotlib, the foundational plotting library of the Scientific
 Python Ecosystem.
@@ -55,8 +53,6 @@ Python Ecosystem.
 > Provide a short summary of the application (maximum of 500 words)
 > (auto-filled from LOI; update if needed)
 
-
-
 Matplotlib is the foundational data visualization library for the Scientific
 Python Ecosystem, with over a million users, including researchers in
 bio-medical imaging, microscopy, and genomics.  Matplotlib is used by
@@ -64,62 +60,50 @@ researchers across the entire scientific workflow from initial data exploration
 and visualization, to evaluating the output of AI/ML models, to publishing
 finalized figures.
 
+For the past 20 years Matplotlib has been maintained by a vibrant, primarily
+volunteer, community.  However we have grown too big and widely used to
+continue on solely volunteer effort.  For the past 42 months CZI EOSS support
+for developers has had a positive effect on the project by complementing and
+enabling, not replacing, volunteer work.  We propose to continue this effort.
 
-For the past 20 years Matplotlib has been
-maintained by a vibrant, primarily volunteer, community.  However we have grown
-too big and widely used to continue on solely volunteer effort.  For the past
-42 months CZI EOSS support for developers has had a positive effect on the
-project by complementing and enabling, not replacing, volunteer work.  We
-propose to continue this effort.
+The primary component of the proposed work is the continued maintenance of the
+library and its community. Maintenance covers a wide range of tasks including
+triaging and fixing bugs, reviewing Pull Requests, tagging and building
+releases, keeping the continuous integration services running, and mentoring
+new contributors.  These tasks are essential for the project's health; though
+each individually is small, they are frequently time critical and sometimes
+tedious.  It is unfair and impractical to rely solely on volunteers to
+accomplish such tasks.
 
-
-The primary component of the
-proposed work is the continued maintenance of the library and its community.
-Maintenance covers a wide range of tasks including triaging and fixing bugs,
-reviewing Pull Requests, tagging and building releases, keeping the continuous
-integration services running, and mentoring new contributors.  These tasks are
-essential for the project's health; though each individually is small, they are
-frequently time critical and sometimes tedious.  It is unfair and impractical
-to rely solely on volunteers to accomplish such tasks.
-
-
-A major
-improvement enabled by supported developers has been our transition to a
-regular release schedule.  Currently, feature releases are now made at a
+A major improvement enabled by supported developers has been our transition to
+a regular release schedule.  Currently, feature releases are now made at a
 regular 2-per-year schedule, typically with 3 bugfix releases between them.
 This regularity, roughly doubling our previous average rate, allows downstream
-projects and users to rapidly benefit from ongoing improvements in
-Matplotlib.
+projects and users to rapidly benefit from ongoing improvements in Matplotlib.
 
+In addition to on-going and routine maintenance, there are substantial but
+incremental enhancements to Matplotlib that require long blocks of dedicated
+effort to implement.  Without supported developers, such projects can drag out
+for months to years or stall altogether.  Examples include fixing long-standing
+rendering and performance issues, overhauling build systems to match the
+changing Python ecosystem, homogenizing and smoothing the API, and new
+user-facing functionality.  Projects to be pursued with the funding requested
+here will be selected in consultation with downstream biomedical libraries.
 
-In addition to on-going and routine maintenance,
-there are substantial but incremental enhancements to Matplotlib that require
-long blocks of dedicated effort to implement.  Without supported developers,
-such projects can drag out for months to years or stall altogether.  Examples
-include fixing long-standing rendering and performance issues, overhauling
-build systems to match the changing Python ecosystem, homogenizing and
-smoothing the API, and new user-facing functionality.  Projects to be pursued
-with the funding requested here will be selected in consultation with
-downstream biomedical libraries.
+Finally, supported developers improve the management of the project.  We now
+have the time and bandwidth to make strategic decisions about the direction of
+the project to ensure the long term health and viability of Matplotlib.  An
+important part of project management is community management: fostering,
+diversifying, and growing our community.  Supported developers are able to
+perform outreach: attending conferences, mentoring sprints, or teaching
+tutorials.  We must ensure that our community is open and welcoming to everyone
+who wants to join, with opportunities to contribute in a spectrum of roles as
+their interests and skills develop.
 
-
-Finally, supported developers
-improve the management of the project.  We now have the time and bandwidth to
-make strategic decisions about the direction of the project to ensure the long
-term health and viability of Matplotlib.  An important part of project
-management is community management: fostering, diversifying, and growing our
-community.  Supported developers are able to perform outreach: attending
-conferences, mentoring sprints, or teaching tutorials.  We must ensure that our
-community is open and welcoming to everyone who wants to join, with
-opportunities to contribute in a spectrum of roles as their interests and
-skills develop.
-
-
-We propose to continue full support (1 FTE) for
-Elliott Sales de Andrade and partial support (.15 FTE) for Thomas Caswell.  The
-effort will be split with approximately .7 FTE for maintenance, .25 FTE for
-medium sized enhancements, and .2 FTE for community and project
-management.
+We propose to continue full support (1 FTE) for Elliott Sales de Andrade and
+partial support (.15 FTE) for Thomas Caswell.  The effort will be split with
+approximately .7 FTE for maintenance, .25 FTE for medium sized enhancements,
+and .2 FTE for community and project management.
 
 
 # work Plan
@@ -217,7 +201,6 @@ response training.
 > project(s) are expected to reach upon completion of the grant. Please use a
 > third-person voice (maximum of 500 words).
 
-
 Quantitatively evaluating maintenance work can be tricky---some Issues or PRs
 take minutes to review while others can take days to weeks of effort---but we
 believe that there is value in looking at the throughput of issues and PRs
@@ -284,22 +267,18 @@ extensions we maintain a lightly curated list of third-party extensions [1] and
 have been assigned a Trove classifier on PyPI [2] that allows downstream
 developers to self-identify as Matplotlib extensions.
 
+Given the centrality of visualization to data analysis across all domains, no
+single tool can satisfy all needs.  There are a range of tools not built on
+Matplotlib (see [3] for a long but not exhaustive list) that target use cases
+that Matplotlib is not well suited for.  Outside of the Python ecosystem, a
+wide range of biomedical visualization libraries and applications exist in R or
+Java. Proprietary solutions such as MATLAB or Tableau may also be used in
+various scientific fields.
 
-Given the
-centrality of visualization to data analysis across all domains, no single tool
-can satisfy all needs.  There are a range of tools not built on Matplotlib (see
-[3] for a long but not exhaustive list) that target use cases that Matplotlib
-is not well suited for.  Outside of the Python ecosystem, a wide range of
-biomedical visualization libraries and applications exist in R or Java.
-Proprietary solutions such as MATLAB or Tableau may also be used in various
-scientific fields.
-
-
-Matplotib's ubiquity and maturity provide
-users with a stable and easily understood tool on which to build both bespoke
-and reproducible visualizations.  Its availability in the Python ecosystem
-allows for direct integration with data processing and modelling tools in a
-familiar environment.
+Matplotib's ubiquity and maturity provide users with a stable and easily
+understood tool on which to build both bespoke and reproducible visualizations.
+Its availability in the Python ecosystem allows for direct integration with
+data processing and modelling tools in a familiar environment.
 
 
 [1] https://matplotlib.org/mpl-third-party/
@@ -316,12 +295,11 @@ familiar environment.
 > see examples from applications funded in previous cycles (maximum of 250
 > words)
 
-
 Matplotlib is committed to being an open and welcoming project.  We believe
 that transparency and explicitness of process and in communication are key to
 building an inclusive, equitable, and diverse project.  In our effort to be
-welcoming, we have worked at being more explicit about our norms
-and values and how the project operates.
+welcoming, we have worked at being more explicit about our norms and values and
+how the project operates.
 
 We have continued two initiatives to lower the barrier of entry for individuals
 to get involved in developing Matplotlib: a triage role in the project and an
