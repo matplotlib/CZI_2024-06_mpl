@@ -32,7 +32,7 @@ sprints exposed new contributors, including those from underrepresented groups,
 to contributing to Matplotlib specifically and open source in general.
 
 We worked with Melissa Mendonça (as the Contributor Experience Lead), supported
-by CZI [1].
+by CZI EOSS-DI-0000000031 [1].
 
 [1] https://chanzuckerberg.com/eoss/proposals/advancing-an-inclusive-culture-in-the-scientific-python-ecosystem/
 
