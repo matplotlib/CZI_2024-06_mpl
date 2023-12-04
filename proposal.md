@@ -4,30 +4,28 @@
 > deliverables (maximum of 250 words).
 
 Over the period of the currently active grant, we believe we have successfully
-achieved our targets:
+achieved our CZI targets:
 
-- Feature releases made at a regular 2-per-year schedule, typically
-  with 3 bugfix releases between them
-- Initial response to all issues / new PRs within a week
-- Resolve majority of new issues / PRs within 1 month
-- Resolve 75 issues / quarter
-- Merge or close 75 PRs / quarter
+- Two feature releases and 4-6 bugfix releases per year
+- Initial response to new issues and PRs within a week
+- Resolve majority of new issues and PRs within 1 month
+- Resolve 75 issues per quarter
+- Merge or close 75 PRs per quarter
 
 We have implemented several larger projects, including changing build systems
 to Meson, overhauling our website, and moving compiled extensions to pybind11.
 We identified several medium size projects, such as adding a new GTK4 backend
 (with high DPI support), completing font fallback work started by our Google
-Summer of Code student, and writing our mission statement.  At this time, two
-medium-size projects -- a high DPI refactor, and knockout group-based
-collection drawing -- have been started and are in progress to be completed by
-the end of the grant.
+Summer of Code student, and writing our mission statement.  Two additional
+medium-size projects are in progress and expected to be completed by the end of
+the grant.
 
-Python 3.12 exposed a fatal, but hidden, bug on macOS.  In part due to this
-active grant, we were able to timely address this issue with bugfix releases
-for both the current and previous feature releases within two weeks.
+Python 3.12 exposed a fatal, but hidden, bug on macOS.  In collaboration with a
+NASA funded RSE we addressed this issue with bugfix releases for both the
+current and previous feature releases within two weeks.
 
 As community outreach, we ran sprints at Grace Hopper Day Celebration (2022,
-2023), SciPy (2022, 2023), PyData NYC (2023), and PyData Global (2023).  These
+2023), SciPy (2022, 2023), PyData NYC (2022, 2023), and PyData Global (2023).  These
 sprints exposed new contributors, including those from underrepresented groups,
 to contributing to Matplotlib specifically and open source in general.
 
@@ -102,9 +100,9 @@ who wants to join, with opportunities to contribute in a spectrum of roles as
 their interests and skills develop.
 
 We propose to continue full support (1 FTE) for Elliott Sales de Andrade and
-partial support (.15 FTE) for Thomas Caswell.  The effort will be split with
-approximately .7 FTE for maintenance, .25 FTE for medium sized enhancements,
-and .2 FTE for community and project management.
+partial support (.08 FTE) for Thomas Caswell.  The effort will be split with
+approximately .73 FTE for maintenance, .25 FTE for medium sized enhancements,
+and .1 FTE for community and project management.
 
 
 # work Plan
@@ -120,26 +118,20 @@ and .2 FTE for community and project management.
 The proposed work can be broadly classified into three parts:
 
 - on-going and routine maintenance of Matplotlib;
-- implementation of several mid-sized features;
+- implementation of several mid-to-large sized features;
 - community and project management.
 
 These tasks underpin the long term health of the library but are ill-suited to
-be accomplished solely with volunteer effort.
+volunteer effort alone.
 
 The primary component of the proposed work is the continued maintenance of
 Matplotlib.  Maintenance covers a wide range of tasks including triaging and
 fixing bugs, reviewing Pull Requests, tagging and building releases, and
 keeping the continuous integration services running.  These tasks are essential
 for the project's health; though each individually is small, they are
-frequently time critical and tedious.  It is unfair and impractical to rely
-solely on volunteers to accomplish such tasks.
-
-For the past 42 months CZI EOSS support for developers has had a positive
-effect on the project by complementing and enabling, not replacing, volunteer
-work.  We propose to continue this effort.  The dedicated support has allowed
-us to promptly fix critical bugs --- including a Python version specific
-segfault in a new CPython release --- and extremely subtle bugs, such as a bug
-in generating correct color palette in PDF output.
+frequently time critical and tedious.  Starting from early 2020 CZI EOSS
+provided critical support for dedicated developers to fill this need.   We
+propose to continue this effort.
 
 In addition to routine maintenance there are substantial improvements to the
 library that can require concentrated effort.  We propose to focus on three
@@ -147,7 +139,7 @@ large projects: generalizing and improving the performance of the Axis ticking
 system, modernizing the font handling code to support variable fonts and
 complex text rendering (required for languages such as Arabic, Bengali, and
 Hebrew), and overhauling how we manage GUI windows.  In addition we will
-identify five medium-sized projects.
+identify five medium-sized projects in coordination with the community.
 
 The tick location and formatting machinery in Matplotlib is flexible, but this
 flexibility comes at a performance cost, architecturally prevents hierarchical
@@ -159,14 +151,13 @@ to the API will have significant impact on our users.  Although we have had
 discussion about these issues since at least 2015 [1,2], it has been
 intractable with volunteer effort.
 
-Matplotlib currently does not support complex shaping, including bidirectional
-text, context sensitive shaping, and ordering, which is required to correctly
-render some non-Latin scripts including Arabic, Devanagari, and Hebrew.
-Further, Matplotlib does not support modern font formats, color fonts, or
-OpenType font variations.  There is an existing external implementation of this
-support that can be adapted for the main library.  This is a low risk project
-that will allow users to plot in their native languages and leverage modern
-fonts.
+Matplotlib does not correctly render some non-Latin scripts including Arabic,
+Devanagari, and Hebrew because we do not support bidirectional text, context
+sensitive shaping, or ordering.  Further, Matplotlib does not support modern
+font formats, color fonts, or OpenType font variations.  There is an existing
+external implementation of this support that can be adapted for the main
+library.  This is a low risk project that will allow users to plot in their
+native languages and leverage modern fonts.
 
 The Matplotlib pyplot module provides bindings to several UI toolkits, along
 with stateful management of the figure life-cycle.  These toolkit windows and
@@ -183,15 +174,14 @@ issues".  By labeling the issues in the GitHub UI they are discoverable and the
 roadmap provides context and guidance to someone new to the library.  Secondly,
 we will prioritize reviewing PRs from new contributors to help them be merged
 in a timely manner.  By being responsive to new contributor's PRs we will
-improve their contributing experience and in turn increase the rate at which
-they open subsequent PRs to become a regular contributor.
+improve their contributing experience and long term productivity as
+contributors.
 
 We propose to continue full support (1 FTE) for Elliott Sales de Andrade and
 partial support (.08 FTE) for Thomas Caswell along with travel and equipment
 support for 2 years.  The effort will be split with approximately .73 FTE for
 maintenance, .25 FTE for medium sized enhancements, and .1 FTE for community
-and project management.  We also propose to fund Code of Conduct incident
-response training.
+and project management.
 
 [1] https://github.com/matplotlib/matplotlib/issues/5665
 [2] https://github.com/matplotlib/matplotlib/issues/6321
@@ -204,34 +194,32 @@ response training.
 > third-person voice (maximum of 500 words).
 
 Quantitatively evaluating maintenance work can be tricky---some Issues or PRs
-take minutes to review while others can take days to weeks of effort---but we
-believe that there is value in looking at the throughput of issues and PRs
-supported by the grant.  The total number of open issues and PRs is dependent
-on both how many come in and the amount of work done by volunteers.  We will
-aim to hit the following metrics:
+take minutes to review while others can take days to weeks of effort---but
+there is value in looking at the throughput of issues and PRs supported by the
+grant.  The total number of open issues and PRs is dependent on both how many
+come in and the amount of work done by volunteers.  Matplotlib metric targets
+include:
 
-- Initial response to all issues / new PRs within a week
-- Resolve majority of new issues / PRs within 1 month
-- Resolve 75 issues / quarter
-- Merge or close 75 PRs / quarter
+- Initial response to new issues and PRs within a week
+- Resolve majority of new issues and PRs within 1 month
+- Resolve 75 issues per quarter
+- Merge or close 75 PRs per quarter
 
-We have proposed three large scale projects above:
+The three large scale projects above:
 
  - overhauling the axis ticking and labeling system
  - modernizing font and language support
  - simplifying integration with GUI toolkits
 
-that will be merged to the main branch by the end of the grant period.  In
-addition we will aim to complete 5 mid-sized projects of smaller scope.  The
-exact projects will be determined in collaboration with the community and
-downstream bio libraries.
+will be merged to the main branch by the end of the grant period.
 
-We will target a feature releases (3.N.0) every 6 months with 2-3 patch
+Five mid-sized projects of smaller scope will be identified and completed.
+
+Matplotilb targets two feature releases (3.N.0) per year with 2-3 patch
 releases (3.N.X) between feature releases.
 
-As mentioned above, Matplotlib is involved in on-going and proposed work on
-improving diversity in our community.  We will run at least two conference
-sprints per year to introduce a broad population to contributing to Matplotlib.
+Matplotlib will run sprints at two conferences per year to introduce a
+diverse population to contributing to Matplotlib.
 
 
 # Existing Support
@@ -244,10 +232,10 @@ sprints per year to introduce a broad population to contributing to Matplotlib.
 
 
 
-- NASA  (12/16/21 - 12/15/24) 3y, $632,969
+- NASA ROSES-2020 "Revamping Matplotlib for Modern Data Structures" (12/16/21 - 12/15/24) 3y, $632,969
 - Google summer of code (2022, 2023) 1 full time student per summer, in-kind, Google
 - Google season of docs (2023) 1 technical writer part time, in-kind, Google
-
+- Tidelift and donations (less than $10k / year total)
 
 
 # Landscape Analysis
@@ -314,3 +302,7 @@ community.  We strive to embody these values in our interactions on GitHub, our
 mailing list and community discussion forum (discourse), and in our social
 media.  We hope that these practices will empower and encourage people from
 varied backgrounds and experiences to participate in Matplotlib.
+
+One of the proposed projects in the grant will increase diversity, equity and
+inclusion by correctly supporting widely used non-Latin scripts to allow users
+to work in their native language.
