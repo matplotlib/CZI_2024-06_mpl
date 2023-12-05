@@ -14,7 +14,7 @@ achieved our CZI targets:
 
 We have implemented several larger projects, including changing build systems
 to Meson, overhauling our website, and moving compiled extensions to pybind11.
-We identified several medium size projects, such as adding a new GTK4 backend
+We completed several medium size projects, such as adding a new GTK4 backend
 (with high DPI support), completing font fallback work started by our Google
 Summer of Code student, and writing our mission statement.  Two additional
 medium-size projects are in progress and expected to be completed by the end of
