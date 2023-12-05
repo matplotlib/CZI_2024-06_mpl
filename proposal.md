@@ -21,7 +21,7 @@ medium-size projects are in progress and expected to be completed by the end of
 the grant.
 
 Python 3.12 exposed a fatal, but hidden, bug on macOS.  In collaboration with a
-NASA funded RSE we addressed this issue with bugfix releases for both the
+NASA funded RSE, we addressed this issue with bugfix releases for both the
 current and previous feature releases within two weeks.
 
 As community outreach, we ran sprints at Grace Hopper Day Celebration (2022,
@@ -61,8 +61,8 @@ finalized figures.
 
 For the past 20 years Matplotlib has been maintained by a vibrant, primarily
 volunteer, community.  However we have grown too big and widely used to
-continue on solely volunteer effort.  For the past 42 months CZI EOSS support
-for developers has had a positive effect on the project by complementing and
+continue on solely volunteer effort.  Since early 2020, CZI EOSS support for
+developers has had a positive effect on the project by complementing and
 enabling, not replacing, volunteer work.  We propose to continue this effort.
 
 The primary component of the proposed work is the continued maintenance of the
@@ -105,7 +105,7 @@ approximately .73 FTE for maintenance, .25 FTE for medium sized enhancements,
 and .1 FTE for community and project management.
 
 
-# work Plan
+# Work Plan
 
 > A description of the proposed work for which funding is being requested,
 > including resources the applicants will provide that are not part of the
@@ -129,11 +129,11 @@ Matplotlib.  Maintenance covers a wide range of tasks including triaging and
 fixing bugs, reviewing Pull Requests, tagging and building releases, and
 keeping the continuous integration services running.  These tasks are essential
 for the project's health; though each individually is small, they are
-frequently time critical and tedious.  Starting from early 2020 CZI EOSS
+frequently time critical and tedious.  Starting from early 2020, CZI EOSS
 provided critical support for dedicated developers to fill this need.  We
 propose to continue this effort.
 
-In addition to routine maintenance there are substantial improvements to the
+In addition to routine maintenance, there are substantial improvements to the
 library that can require concentrated effort.  We propose to focus on three
 large projects: generalizing and improving the performance of the Axis ticking
 system, modernizing the font handling code to support variable fonts and
@@ -174,7 +174,7 @@ issues".  By labeling the issues in the GitHub UI they are discoverable and the
 roadmap provides context and guidance to someone new to the library.  Secondly,
 we will prioritize reviewing PRs from new contributors to help them be merged
 in a timely manner.  By being responsive to new contributor's PRs we will
-improve their contributing experience and long term productivity as
+improve their contributing experience and long-term productivity as
 contributors.
 
 We propose to continue full support (1 FTE) for Elliott Sales de Andrade and
@@ -215,7 +215,7 @@ will be merged to the main branch by the end of the grant period.
 
 Five mid-sized projects of smaller scope will be identified and completed.
 
-Matplotilb targets two feature releases (3.N.0) per year with 2-3 patch
+Matplotlib targets two feature releases (3.N.0) per year with 2-3 patch
 releases (3.N.X) between feature releases.
 
 Matplotlib will run sprints at two conferences per year to introduce a diverse
@@ -265,7 +265,7 @@ wide range of biomedical visualization libraries and applications exist in R or
 Java.  Proprietary solutions such as MATLAB or Tableau may also be used in
 various scientific fields.
 
-Matplotib's ubiquity and maturity provide users with a stable and easily
+Matplotlib's ubiquity and maturity provide users with a stable and easily
 understood tool on which to build both bespoke and reproducible visualizations.
 Its availability in the Python ecosystem allows for direct integration with
 data processing and modelling tools in a familiar environment.
@@ -293,7 +293,7 @@ how the project operates.
 We have continued two initiatives to lower the barrier of entry for individuals
 to get involved in developing Matplotlib: a triage role in the project and an
 "incubator" channel on our gitter.  In addition we now have open monthly new
-contributor meetings to assist with the on boarding process.
+contributor meetings to assist with the on-boarding process.
 
 It is critical that all contributors, independent of experience level both in
 general and with the project, feel safe to make mistakes and learn in our
