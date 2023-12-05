@@ -75,9 +75,9 @@ tedious.  It is unfair and impractical to rely solely on volunteers to
 accomplish such tasks.
 
 A major improvement enabled by supported developers has been our transition to
-a regular release schedule.  Currently, feature releases are now made at a
-regular 2-per-year schedule, typically with 3 bugfix releases between them.
-This regularity, roughly doubling our previous average rate, allows downstream
+a regular release schedule.  Currently, feature releases are made at a regular
+2-per-year schedule, typically with 3 bugfix releases between them.  This
+regularity, roughly doubling our previous average rate, allows downstream
 projects and users to rapidly benefit from ongoing improvements in Matplotlib.
 
 In addition to on-going and routine maintenance, there are substantial but
@@ -143,15 +143,15 @@ identify five medium-sized projects in coordination with the community.
 
 The tick location and formatting machinery in Matplotlib is flexible, but this
 flexibility comes at a performance cost, architecturally prevents hierarchical
-labeling, and reduces API usability by making seemingly simple tasks extremely
-complex.  While the work to design the new API is significant, our primary
-concern will be to complete this work while minimizing the impact on existing
-users.  Because tick labeling is so fundamental to plotting, even small changes
-to the API will have significant impact on our users.  Although we have had
-discussion about these issues since at least 2015 [1,2], it has been
-intractable with volunteer effort.
+labeling, and reduces API usability by making seemingly simple tasks
+surprisingly complex.  While the work to design the new API is significant, our
+primary concern will be to complete this work while minimizing the impact on
+existing users.  Because tick labeling is so fundamental to plotting, even
+small changes to the API will have significant impact on our users.  Although
+we have had discussion about these issues since at least 2015 [1,2], it has
+been intractable with volunteer effort.
 
-Matplotlib does not correctly render some non-Latin scripts including Arabic,
+Matplotlib can not correctly render some non-Latin scripts including Arabic,
 Devanagari, and Hebrew because we do not support bidirectional text, context
 sensitive shaping, or ordering.  Further, Matplotlib does not support modern
 font formats, color fonts, or OpenType font variations.  There is an existing
