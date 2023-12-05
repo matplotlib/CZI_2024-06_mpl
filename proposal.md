@@ -25,9 +25,9 @@ NASA funded RSE we addressed this issue with bugfix releases for both the
 current and previous feature releases within two weeks.
 
 As community outreach, we ran sprints at Grace Hopper Day Celebration (2022,
-2023), SciPy (2022, 2023), PyData NYC (2022, 2023), and PyData Global (2023).  These
-sprints exposed new contributors, including those from underrepresented groups,
-to contributing to Matplotlib specifically and open source in general.
+2023), SciPy (2022, 2023), PyData NYC (2022, 2023), and PyData Global (2023).
+These sprints exposed new contributors, including those from underrepresented
+groups, to contributing to Matplotlib specifically and open source in general.
 
 We worked with Melissa Mendonça (as the Contributor Experience Lead), supported
 by CZI EOSS-DI-0000000031 [1].
@@ -130,7 +130,7 @@ fixing bugs, reviewing Pull Requests, tagging and building releases, and
 keeping the continuous integration services running.  These tasks are essential
 for the project's health; though each individually is small, they are
 frequently time critical and tedious.  Starting from early 2020 CZI EOSS
-provided critical support for dedicated developers to fill this need.   We
+provided critical support for dedicated developers to fill this need.  We
 propose to continue this effort.
 
 In addition to routine maintenance there are substantial improvements to the
@@ -218,8 +218,8 @@ Five mid-sized projects of smaller scope will be identified and completed.
 Matplotilb targets two feature releases (3.N.0) per year with 2-3 patch
 releases (3.N.X) between feature releases.
 
-Matplotlib will run sprints at two conferences per year to introduce a
-diverse population to contributing to Matplotlib.
+Matplotlib will run sprints at two conferences per year to introduce a diverse
+population to contributing to Matplotlib.
 
 
 # Existing Support
@@ -269,7 +269,6 @@ Matplotib's ubiquity and maturity provide users with a stable and easily
 understood tool on which to build both bespoke and reproducible visualizations.
 Its availability in the Python ecosystem allows for direct integration with
 data processing and modelling tools in a familiar environment.
-
 
 [1] https://matplotlib.org/mpl-third-party/
 [2] https://pypi.org/search/?q=&o=&c=Framework+%3A%3A+Matplotlib
